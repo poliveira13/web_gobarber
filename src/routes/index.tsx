@@ -4,9 +4,10 @@ import { Switch, Route } from 'react-router-dom';
 import SingIn from '../pages/SingIn';
 import SingUp from '../pages/SingUp';
 
-const Routes: React.FC = () => 
+const Routes: React.FC = () => (
   <Switch>
-    <Route />
+    <Route path="/" exact component={SingIn} />
+    <Route path="/SingUp" component={SingUp} />
   </Switch>
-
+);
 export default Routes;
